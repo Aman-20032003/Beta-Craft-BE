@@ -16,6 +16,11 @@ public class AreaCylinder {
 
         // Perform addition
         int sum = a + b;
+        int sum = a + b;
+        int sum = a + b;
+        int sum = a + b;
+        int sum = a + b;
+        int sum = a + b;
 
         // Display the result
         System.out.println("Sum of " + a + " and " + b + " is: " + sum);
