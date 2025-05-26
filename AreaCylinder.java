@@ -24,6 +24,10 @@ public class AreaCylinder {
 
         // Display the result
         System.out.println("Sum of " + a + " and " + b + " is: " + sum);
+        for (int i = 0; i < max; i++) {
+            System.err.println(max);
+            
+        }
     } 
 >>>>>>> 5eade73ae4b50aa74f18509830464c0460cae073
 
