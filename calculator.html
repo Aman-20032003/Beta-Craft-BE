@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           .whole{
+                display:grid;
+                grid-template-columns:repeat(4,50px);
+                grid-template-rows: 100px repeat(5,50px);
+                gap:10px;
+                background-color: black;
+                padding: 20px;
+                width:230px;
+                box-shadow: 2px 2px 5px 2px rgb(127, 126, 126);
+            }
+            #screen{
+                grid-column:1 / 4 span;
+                border: 2px solid rgba(215, 214, 214, 0.144);
+                border-radius: 2px;
+                background-color: rgba(153, 150, 150, 0.374);
+                color:white;
+                font-size:xx-large;
+                font-weight: bold;
+                text-align: right;
+            }
+        
+             .whole>button,.whole>div{
+                border: 2px solid rgba(215, 214, 214, 0.144);
+                border-radius: 50%;
+                text-align: center;
+                padding-top: 5px;
+                font-size:x-large;
+                font-weight:bold;
+                color:white;
+                background-color: rgba(153, 150, 150, 0.374);
+            }
+            
+           
+            ul{list-style-type:decimal;}
+            .welcome{list-style-type:initial;}
+            
+            .a1{text-decoration:initial;}  
+            
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+       
+    <div class="whole">
+        <div id="screen"></div>
+
+        <button style="color:red">C</button>
+        <button style="color:rgb(2, 157, 2)">()</button>
+        <button style="color:rgb(2, 157, 2)">%</button>
+        <button style="color:rgb(2, 157, 2)" id="press_div" value="/" onclick="press('/')">/</button>
+
+        <button id="press7" value="7" onclick="press(7)">7</button>
+        <button id="press8" value="8" onclick="press(8)">8</button>
+        <button id="press9" value="9" onclick="press(9)">9</button>
+
+        <button style="color:rgb(2, 157, 2)" id="press_mul" value="*" onclick="press('*')">*</button>
+
+        <button id="press4" value="4" onclick="press(4)">4</button>
+        <button id="press5" value="5" onclick="press(5)">5</button>
+        <button id="press6" value="6" onclick="press(6)">6</button>
+
+        <button style="color:rgb(2, 157, 2)" id="press_sub" value="-" onclick="press('-')">-</button>
+
+        <button id="press1" value="1" onclick="press(1)">1</button>
+        <button id="press2" value="2" onclick="press(2)">2</button>
+        <button id="press3" value="3" onclick="press(3)">3</button>
+
+        <button style="color:rgb(2, 157, 2)" id="press_add" value="+" onclick="press('+')">+</button>
+        <button>+/-</button>
+        <button id="press0" value="0" onclick="press(0)">0</dbutton>
+        <button id="press_dot" value="." onclick="press('.')">.</button>
+        <button style="background-color:rgb(2, 157, 2)">=</button>
+    </div>
+    <script>
+       function press(abc){
+           document.getElementById("screen").innerHTML+=abc;
+        }
+    </script>
+  
+</body>
+</html>
