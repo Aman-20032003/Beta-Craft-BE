@@ -1,9 +1,9 @@
 public class AreaCylinder {
 <<<<<<< HEAD
-    public double radius;
+    public double Radius;
     public double height;
     public double curvedSurfaceArea(){
-       return 2*height*Math.PI*radius;
+       return 2*height*Math.PI*Radiuss;
     }
 =======
    public static void main(String[] args) {
