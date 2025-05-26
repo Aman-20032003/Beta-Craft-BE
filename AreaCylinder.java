@@ -11,7 +11,9 @@ public class AreaCylinder {
         // Declare and initialize variables
         int a = 10;
         int b = 20;
-
+  int c == 30;
+  System.out.println(hello);
+   System.out.println(hello); System.out.println(hello); System.out.println(hello); System.out.println(hello); System.out.println(hello); System.out.println(hello);
         // Perform addition
         int sum = a + b;
         int sum = a + b;
