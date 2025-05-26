@@ -1,9 +1,12 @@
 public class AreaCylinder {
-<<<<<<< HEAD
-    public double radius;
-    Strig hel= new String ();
+
+    public double Radius;
+    public double height;
+    public double curvedSurfaceArea(){
+       return 2*height*Math.PI*Radiuss;
+
     }
-=======
+
    public static void main(String[] args) {
         // Print a message
         System.out.println("Hello, World!");
@@ -29,6 +32,6 @@ public class AreaCylinder {
             
         }
     } 
->>>>>>> 5eade73ae4b50aa74f18509830464c0460cae073
+
 
 }
